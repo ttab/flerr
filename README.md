@@ -1,6 +1,6 @@
 # Flush errors
 
-Helper library that can be used to capture errors from deferred functions allows something close to a block level defer.
+Helper library that can be used to capture errors from deferred functions and allows something close to a block level defer.
 
 Example usage:
 
