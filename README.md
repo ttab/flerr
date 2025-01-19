@@ -39,7 +39,7 @@ func createScriptDir(sourceDir embed.FS, scriptDir string) (outErr error) {
 			return fmt.Errorf("create destination file for %q: %w", f.Name(), err)
 		}
 
-		clean.Addf(src.Close, "close %q destination", f.Name())
+		clean.Addf(dst.Close, "close %q destination", f.Name())
 
 		_, err = io.Copy(dst, src)
 		if err != nil {
